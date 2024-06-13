@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ===== Favicon ===== -->
+  <link rel="icon" href="images/favicon.png" />
+  <!-- ===== Fonts Used ===== -->
+  <link rel="stylesheet" href="css/fonts.css" />
+  <!-- ===== Font Awesome Library Icons ===== -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- ===== Bootstrap Grid System ===== -->
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <!-- ===== Main CSS Style Sheet ===== -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+  <main class="interface" id="interface">
+
+    <div class="container   ">
+      <header>
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="location  locationp"></p>
+        </div>
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" name="search" placeholder="Search city..." id="searchBox" spellcheck="false"
+            autocomplete="off" />
+        </div>
+      </header>
+
+      <section class="forecast row">
+        <div class="forecast-data  col-md-9">
+          <h2>Weather</h2>
+          <div class="forecast-cards">
+
+          </div>
+        </div>
+        <div class="rain-chance  col-md-3">
+          <h3>Chance of rain</h3>
+          <div class="rain-day-hours">
+            <div class="clock" data-clock="0">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>12Am</p>
+            </div>
+            <div class="clock" data-clock="6">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>6Am</p>
+            </div>
+            <div class="clock" data-clock="12">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>12Pm</p>
+            </div>
+            <div class="clock" data-clock="18">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>6Pm</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="forecast secontrainChance row mx-3 my-2">
+      <div class="rain-chance col-md-12">
+        <h3 class="headerSecontrainChance">Chance of rain throughout the day</h3>
+        <div class="row  gy-3 p-2 mx-2">
+          <div class="col-lg-6 rain-day-hours half1  px-0  ">
+            <div class="clock" data-clock="0">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>12Am</p>
+            </div>
+            <div class="clock" data-clock="1">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>1Am</p>
+            </div>
+            <div class="clock" data-clock="2">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>2Am</p>
+            </div>
+            <div class="clock" data-clock="3">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>3Am</p>
+            </div>
+            <div class="clock" data-clock="4">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>4Am</p>
+            </div>
+            <div class="clock" data-clock="5">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>5Am</p>
+            </div>
+            <div class="clock" data-clock="6">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>6Am</p>
+            </div>
+            <div class="clock" data-clock="7">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>7Am</p>
+            </div>
+            <div class="clock" data-clock="8">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>8Am</p>
+            </div>
+            <div class="clock" data-clock="9">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>9Am</p>
+            </div>
+            <div class="clock" data-clock="10">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>10Am</p>
+            </div>
+            <div class="clock" data-clock="11">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>11Am</p>
+            </div>
+
+
+          </div>
+          <div class="col-lg-6 rain-day-hours half2 px-0  ">
+            <div class="clock" data-clock="12">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>12Pm</p>
+            </div>
+            <div class="clock" data-clock="13">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>1Pm</p>
+            </div>
+            <div class="clock" data-clock="14">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>2Pm</p>
+            </div>
+            <div class="clock" data-clock="15">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>3Pm</p>
+            </div>
+            <div class="clock" data-clock="16">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>4Pm</p>
+            </div>
+            <div class="clock" data-clock="17">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>5Pm</p>
+            </div>
+            <div class="clock" data-clock="18">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>6Pm</p>
+            </div>
+            <div class="clock" data-clock="19">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>7Pm</p>
+            </div>
+            <div class="clock" data-clock="20">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>8Pm</p>
+            </div>
+            <div class="clock" data-clock="21">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>9Pm</p>
+            </div>
+            <div class="clock" data-clock="22">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>10Pm</p>
+            </div>
+            <div class="clock" data-clock="23">
+              <div class="percentage"></div>
+              <div class="bar">
+                <div class="percent"></div>
+              </div>
+              <p>11Pm</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="recent-cities row">
+        <div class="recent-header">
+          <h2>Recent Cities</h2>
+          <button class="btnClearCities">Clear All <i class="fa-solid fa-trash-can"></i></button>
+        </div>
+        <div class="city-items"></div>
+      </section>
+    </div>
+  </main>
+  <!-- ===== Main JS File ===== -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>
